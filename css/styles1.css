@@ -1,0 +1,161 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+    font-size: large;
+    }
+h1{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: aliceblue;
+    }
+h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-size: larger;
+    font-weight:  300;
+    color: aliceblue;
+}
+a{
+    color:rgb(255, 0, 183);
+}
+a:visited{
+    color:rgb(87, 218, 241);
+}
+a:hover{
+    font-size:130%
+    
+}
+img{
+    display:block;
+    width:60%;
+    border:solid aqua 5px;
+    padding: 3px;
+    margin: auto;
+}
+
+.responsive-iframe {
+    width: 60%; /* Same width as your image */
+    margin: auto; /* Center the div */
+    padding-bottom: calc(60% * (9 / 16)); /* Maintain aspect ratio */
+    position: relative;
+    overflow: hidden;
+    height: 0; /* Height is maintained by padding-bottom */
+    border:solid aqua 5px;
+}
+
+.responsive-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.riz{
+    font-family:cursive;
+    font-size:large;
+    color:red;
+    text-decoration: solid;
+    background-color:aliceblue;
+    border: solid red 5px;
+}
+.riz:hover{
+    display: block;
+    text-align:center;
+    font-size:300%
+}
+li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size:medium;
+    color: aqua
+}
+.listheading{
+    font-weight: bold;
+    font-style: normal;
+    color: aliceblue;
+}
+.homebg {
+    background-image: url(../assets/img/obsidian-bg.jpg);
+}
+.tableau-center {
+    display: block;
+    margin: auto; /* This will center the Tableau viz */
+    border: 5px solid aqua; /* Adding a blue border */
+    width: 89%;
+    max-width: 3000px; /* Or the maximum width you want for your viz */
+}
+.centered-text{text-align: center;
+}
+.list-container {
+    text-align: center;
+}
+.centered-list {
+    display: inline-block;
+    margin: 0;
+    padding-left: 0;
+    text-align: left;
+    list-style-type: none;
+}
+.centered-list > li {
+    color: #eeeeee;
+    position: relative;
+    margin-bottom: 10px;
+}
+.centered-list > li:before {
+    content: counter(list-item) ". ";
+    margin-right: 5px;
+    font-weight: bold;
+    color: #f9f9f9; /* The color for the numbers */
+}
+.centered-list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.centered-list ul li {
+    text-align: 0;
+}
+ .centered-list ol {
+        counter-reset: list-counter;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.centered-list ol li {
+    text-align: left; /* Ensures the text within list items is left-aligned */
+    list-style: none;
+    position: relative;
+    padding-left: 40px;
+}
+.centered-list ol li:before {
+    counter-increment: list-counter;
+    content: counter(list-counter) ".";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #eeeeee; /* Color for the numbers */
+    font-weight: bold;
+}
+
+.centered-link {
+    text-align: center;
+    margin-top: 20px; /* Or any other value you prefer for vertical spacing */
+}
+
+.to-top {
+    display: block;
+    position: fixed;
+    bottom: 20px; /* Distance from bottom */
+    right: 20px; /* Distance from right */
+    background-color: aqua; /* Or any other color you prefer */
+    color: #000000; /* Text color */
+    padding: 10px; /* Padding inside the link for better touch target */
+    border-radius: 5px; /* Optional for rounded corners */
+    text-decoration: none; /* Remove underline from link */
+}
+
+.to-top:hover {
+    background-color: darkaqua; /* Darker color on hover for feedback */
+}
+.centered-list ul li::marker {
+    color: #FF69B4; /* The color for the bullets */
+}
